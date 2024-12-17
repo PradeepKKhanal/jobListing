@@ -30,6 +30,9 @@ export default tseslint.config(
                 'warn',
                 { allowConstantExport: true },
             ],
+            '@typescript-eslint/no-empty-interface': 'off',
+            '@typescript-eslint/no-empty-object-type': 'off',
+            // 'no-empty-interface':'off',
             'prettier/prettier': 'error',
         },
     }
