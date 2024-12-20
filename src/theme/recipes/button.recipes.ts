@@ -11,12 +11,11 @@ export const buttonRecipe = defineRecipe({
         visual: {
             primary: {
                 background: 'primary.700',
-                paddingX: '30px',
                 border: '1px solid white',
                 color: 'white',
                 _hover: {
                     color: 'white',
-                    background: 'primary.900',
+                    background: 'primary.800',
                     borderColor: 'white',
                     _disabled: { color: 'white', background: 'primary.200' },
                 },
@@ -24,13 +23,12 @@ export const buttonRecipe = defineRecipe({
 
             secondary: {
                 background: 'primary.50',
-                paddingX: '30px',
-                border: '1px solid white',
+                border: '1px solid ',
                 borderColor: 'primary.700',
                 color: 'primary.700',
                 _hover: {
                     color: 'primary.700',
-                    background: 'primary.200',
+                    background: 'primary.100',
                     borderColor: 'white',
                     _disabled: {
                         color: 'primary.800',
@@ -58,6 +56,12 @@ export const buttonRecipe = defineRecipe({
             },
         },
         size: {
+            xs: {
+                fontSize: '12px',
+                px: '15px',
+                py: '5px',
+                lineHeight: '10px',
+            },
             sm: {
                 fontSize: '14px',
                 px: '12px',

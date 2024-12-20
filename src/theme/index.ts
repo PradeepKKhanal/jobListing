@@ -1,7 +1,8 @@
 import {
     createSystem,
     defineConfig,
-    defaultBaseConfig,
+    mergeConfigs,
+    defaultConfig,
 } from '@chakra-ui/react';
 import { buttonRecipe } from './recipes/button.recipes';
 import { THEME_COLORS_TOKEN } from './tokens/colors.tokens';
@@ -12,8 +13,10 @@ import { THEME_COLORS_SEMANTIC_TOKEN } from './semantic_tokens/colors.semantic_t
 import { THEME_FONTS_SEMANTIC_TOKEN } from './semantic_tokens/fonts.semantic_tokens';
 import { FONT_SIZE_SEMANTIC_TOKEN } from './semantic_tokens/fontSize.semantic_tokens';
 import { FONT_WEIGHT_SEMANTIC_TOKEN } from './semantic_tokens/fontWeight.sematic_tokens';
+import { globalCss } from './globalCss';
 
 const config = defineConfig({
+    globalCss: globalCss,
     theme: {
         tokens: {
             colors: THEME_COLORS_TOKEN,
@@ -33,4 +36,5 @@ const config = defineConfig({
     },
 });
 
-export const system = createSystem(defaultBaseConfig, config);
+const customConfig = mergeConfigs(defaultConfig, config);
+export const system = createSystem(customConfig);

@@ -1,15 +1,15 @@
 export const THEME_COLORS_TOKEN = {
     primary: {
         50: { value: '#E3F2FD' },
-        100: { value: '#BBDEFB' },
-        200: { value: '#90CAF9' },
-        300: { value: '#64B5F6' },
-        400: { value: '#42A5F5' },
-        500: { value: '#2196F3' },
-        600: { value: '#1E88E5' },
-        700: { value: '#1976D2' },
-        800: { value: '#1565C0' },
-        900: { value: '#0D47A1' },
+        100: { value: '#eceafb' },
+        200: { value: '#c7bff3' },
+        300: { value: '#a194ea' },
+        400: { value: '#7c69e2' },
+        500: { value: '#563fda' },
+        600: { value: '#3d25c0' },
+        700: { value: '#2f1d96' },
+        800: { value: '#22156b' },
+        900: { value: ' #140c40' },
     },
     secondary: {
         50: { value: '#FFF3E0' },
@@ -23,7 +23,7 @@ export const THEME_COLORS_TOKEN = {
         800: { value: '#EF6C00' },
         900: { value: '#E65100' },
     },
-    black: {
+    tertiary: {
         50: { value: '#F7F7F7' },
         100: { value: '#E3E3E3' },
         200: { value: '#C8C8C8' },

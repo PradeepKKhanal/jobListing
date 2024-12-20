@@ -1,4 +1,5 @@
 export const FONT_SIZE_TOKEN = {
+    '2xs': { value: '10px' },
     xs: {
         value: '12px', // Extra small font size, used for footnotes, disclaimers, etc.
     },
@@ -9,7 +10,7 @@ export const FONT_SIZE_TOKEN = {
         value: '16px', // Medium font size for standard body text (default)
     },
     lg: {
-        value: '18px', // Large font size for secondary body text or medium headings
+        value: '20px', // Large font size for secondary body text or medium headings
     },
     xl: {
         value: '24px', // Extra large font size for primary headings or large body text

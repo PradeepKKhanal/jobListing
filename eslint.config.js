@@ -34,6 +34,7 @@ export default tseslint.config(
             '@typescript-eslint/no-empty-object-type': 'off',
             // 'no-empty-interface':'off',
             'prettier/prettier': 'error',
+            '@typescript-eslint/no-explicit-any': 'off',
         },
     }
 );
