@@ -49,7 +49,7 @@ const JobDetails = () => {
                     </Box>
                 )}
 
-                {
+                {data && (
                     <Box
                         maxW={['100%', '90%', '80%', '70%']}
                         bg={'white'}
@@ -309,7 +309,7 @@ const JobDetails = () => {
                             </Button>
                         </Box>
                     </Box>
-                }
+                )}
             </Box>
         </>
     );
