@@ -29,7 +29,7 @@ const JobListCard = ({
     return (
         <Card.Root
             bg="white"
-            w="500px"
+            w="450px"
             // h="150px"
             borderRadius={'5px'}
             boxShadow={'0 0 5px 5px {colors.primary.100}'}
