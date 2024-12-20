@@ -46,6 +46,10 @@ const JobListing = () => {
         }
     }, [actualData]);
 
+    useEffect(() => {
+        setAcutalData(data);
+    }, [data]);
+
     const handePreviousClick = () => {
         setLastIndex(firstIndex);
         setFirstIndex(firstIndex - itemPerPage);
