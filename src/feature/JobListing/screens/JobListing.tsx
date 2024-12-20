@@ -111,49 +111,6 @@ const JobListing = () => {
                         </Button>
                     </HStack>
                 </Box>
-                {/* <Box
-                    bg={'tertiary.50'}
-                    borderRadius={'2px'}
-                    m={'20px'}
-                    p={'20px'}
-                    display={'flex'}
-                    gap={'20px'}
-                    alignItems={'center'}
-                    justifyContent={'space-between'}
-                    w="100%"
-                >
-                    <Input
-                        border={'1px solid {colors.primary.100}'}
-                        h={'45px'}
-                        outline={'none !important'}
-                        boxShadow={'0px 0px 5px 1px {colors.primary.200}'}
-                        _focus={{
-                            border: '1px solid {colors.primary.500',
-                            outline: 'none',
-                        }}
-                        // w='75%'
-                        flexGrow={1}
-                        placeholder="Enter job title here"
-                        borderRadius={'2px'}
-                        p="5px"
-                        _focusVisible={{
-                            borderColor: 'primary.500',
-                        }}
-                        _placeholder={{ color: 'tertiary.300' }}
-                    />
-
-                    <Button
-                        h={'45px'}
-                        display={'flex'}
-                        gap={'5px'}
-                        justifyContent={'center'}
-                        alignItems={'center'}
-                    >
-                        {' '}
-                        <HiMiniMagnifyingGlass />
-                        Search Jobs
-                    </Button>
-                </Box> */}
             </Box>
 
             <Box bg={'tertiary.50'} py="100px" minH="360px">
@@ -180,9 +137,6 @@ const JobListing = () => {
                             .map((data: any, index: number) => {
                                 return (
                                     <Fragment key={index}>
-                                        {/* 
-                                <JobListCard title={data.title} description={data.description} locationName={data.locationName} employmentType={data.employmentType} salary={data.salary} status={data.status}></JobListCard> */}
-
                                         <JobListCard
                                             title={data.job_title || data.title}
                                             description={data.description}
