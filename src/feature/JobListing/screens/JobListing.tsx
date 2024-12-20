@@ -111,7 +111,7 @@ const JobListing = () => {
                                 setActiveButton('favourites');
                             }}
                         >
-                            My Favourites
+                            My Favourites ({favourites.length})
                         </Button>
                     </HStack>
                 </Box>
